@@ -148,11 +148,6 @@ img {
 
 @media (max-width: 375px) {
 
-    body {
-        width: 375px;
-        border: 1px red solid;
-    }
-
     .review-cards {
         grid-template-areas: 
         "colton"
