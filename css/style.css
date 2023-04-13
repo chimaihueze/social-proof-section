@@ -12,9 +12,20 @@ body {
 }
 
 .ads-ratings {
-    display: flex;
+    display: grid;
     margin: 2rem 8rem;
     justify-content: space-around;
+
+    grid-template-areas: 
+        "ads ratings";
+}
+
+.ads-ratings:nth-child(1) {
+    grid-area: ads;
+}
+
+.ads-ratings:nth-child(2) {
+    grid-area: ratings;
 }
 
 .ads > h2 {
@@ -135,10 +146,11 @@ img {
     height: 215px;
 }
 
-@media (max-width: 875px) {
+@media (max-width: 375px) {
 
     body {
         width: 375px;
+        border: 1px red solid;
     }
 
     .review-cards {
@@ -150,11 +162,18 @@ img {
     }
 
     .ads-ratings {
-        flex-direction: column;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-        
+        grid-template-areas: 
+            "ads"
+            "ratings";
+            width: 100%;
+    }
+
+    .ads-ratings:nth-child(1) {
+        grid-area: ads;
+    }
+    
+    .ads-ratings:nth-child(2) {
+        grid-area: ratings;
     }
 
     .ads > h2 {
@@ -171,8 +190,6 @@ img {
         justify-content: center;
         align-items: center;
     }
-
-
 
     .rating-1 {
         background: #eedbee;
