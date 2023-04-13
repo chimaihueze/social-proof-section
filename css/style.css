@@ -12,20 +12,9 @@ body {
 }
 
 .ads-ratings {
-    display: grid;
+    display: flex;
     margin: 2rem 8rem;
     justify-content: space-around;
-
-    grid-template-areas: 
-        "ads ratings";
-}
-
-.ads-ratings:nth-child(1) {
-    grid-area: ads;
-}
-
-.ads-ratings:nth-child(2) {
-    grid-area: ratings;
 }
 
 .ads > h2 {
@@ -140,13 +129,49 @@ img {
 
 .irene {
     height: 215px;
+    margin-top: 20px;
 }
 
 .anne {
     height: 215px;
+    margin-top: 40px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 875px) {
+
+    body {
+        width: 375px;
+    }
+
+    .ads-ratings {
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ads > h2 {
+        text-align: center;
+        margin-left: 3rem;
+    }
+
+    .ads > p {
+        text-align: center;
+    }
+
+    .rating-1 {
+        padding: 0.8rem;
+    }
+    
+    .rating-2 {
+        padding: 0.8rem;
+        margin-left: 0;
+    }
+    
+    .rating-3 {
+        padding: 0.8rem;
+        margin-left: 0;
+    }
 
     .review-cards {
         grid-template-areas: 
@@ -154,64 +179,19 @@ img {
         "irene"
         "anne";
         width: 100%;
+        border: 1px solid red;
     }
 
-    .ads-ratings {
-        grid-template-areas: 
-            "ads"
-            "ratings";
-            width: 100%;
-    }
-
-    .ads-ratings:nth-child(1) {
-        grid-area: ads;
-    }
-    
-    .ads-ratings:nth-child(2) {
-        grid-area: ratings;
-    }
-
-    .ads > h2 {
-        margin-left: 44px;
-        text-align: center;
-    }
-
-    .ads > p {
-        text-align: center;
-    }
-
-    .ratings {
-        font-weight: bold;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .rating-1 {
-        background: #eedbee;
-        color: hsl(300, 43%, 22%);
-        border-radius: 4px;
-        margin-top: 1rem;
-        padding: 2rem;
-    }
-    
-    .rating-2 {
-        background: #eedbee;
-        color: hsl(300, 43%, 22%);
-        border-radius: 4px;
-        padding: 2rem;
-        margin-left: 0;
-    }
-    
-    .rating-3 {
+    .colton {
         width: 450px;
-        background: #eedbee;
-        color: hsl(300, 43%, 22%);
-        border-radius: 4px;
-        padding: 2rem;
-        margin-left: 0;
+        margin-right: 50px
     }
 
-    .checked {
-        text-align: center;
+    .irene {
+        width: 450px;
+    }
+
+    .anne {
+        width: 450px;
     }
 }
