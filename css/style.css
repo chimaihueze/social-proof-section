@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    width: 1340px;
+    font-size: 15px;
+}
+
+.ads-ratings {
+    display: flex;
+    margin: 2rem 8rem;
+    justify-content: space-around;
+}
+
+.ads > h2 {
+    font-size: 2.5rem;
+    color: hsl(300, 43%, 22%);
+    width: 300px;
+    font-weight: bold;
+    line-height: 2.5rem;
+}
+
+.ads > p {
+    font-size: 0.8rem;
+    width: 400px;
+    font-size: medium;
+    color: hsl(303, 10%, 53%);
+}
+
+.ratings {
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+
+.rating-1 {
+    width: 450px;
+    background: #eedbee;
+    color: hsl(300, 43%, 22%);
+    border-radius: 4px;
+    margin-top: 3rem;
+    padding: 0.8rem;
+}
+
+.rating-2 {
+    width: 450px;
+    background: #eedbee;
+    color: hsl(300, 43%, 22%);
+    border-radius: 4px;
+    padding: 0.8rem;
+    margin-left: 35px;
+}
+
+.rating-3 {
+    width: 450px;
+    background: #eedbee;
+    color: hsl(300, 43%, 22%);
+    border-radius: 4px;
+    padding: 0.8rem;
+    margin-left: 70px;
+}
+
+.checked {
+    color: orange;
+}
+
+.review-cards {
+    margin: 2rem 8rem;
+    gap: 20px;
+
+    display: grid;
+    grid-template-areas: 
+        "colton irene anne";      
+}
+
+.card {
+    background: hsl(300, 43%, 22%);
+    color: hsl(300, 24%, 96%);
+    border-radius: 10px;
+    padding: 1.5rem;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+}
+
+img {
+    border-radius: 50px;
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+}
+
+.name {
+    font-size: 13px;
+}
+
+.role {
+    color: hsl(333, 80%, 67%);
+    font-size: 12px;
+}
+
+.review {
+    padding: 1rem;
+    margin-top: 0;
+}
+
+.review-cards:nth-child(1) {
+    grid-area: colton;
+}
+
+.review-cards:nth-child(2) {
+    grid-area: irene;
+}
+
+.review-cards:nth-child(3) {
+    grid-area: anne;
+}
+
+.colton {
+    height: 215px;
+}
+
+.irene {
+    height: 215px;
+}
+
+.anne {
+    height: 215px;
+}
+
+@media (max-width: 875px) {
+
+    body {
+        width: 375px;
+    }
+
+    .review-cards {
+        grid-template-areas: 
+        "colton"
+        "irene"
+        "anne";
+        width: 100%;
+    }
+
+    .ads-ratings {
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .ads > h2 {
+        margin-left: 44px;
+        text-align: center;
+    }
+
+    .ads > p {
+        text-align: center;
+    }
+
+    .ratings {
+        font-weight: bold;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    .rating-1 {
+        background: #eedbee;
+        color: hsl(300, 43%, 22%);
+        border-radius: 4px;
+        margin-top: 1rem;
+        padding: 2rem;
+    }
+    
+    .rating-2 {
+        background: #eedbee;
+        color: hsl(300, 43%, 22%);
+        border-radius: 4px;
+        padding: 2rem;
+        margin-left: 0;
+    }
+    
+    .rating-3 {
+        width: 450px;
+        background: #eedbee;
+        color: hsl(300, 43%, 22%);
+        border-radius: 4px;
+        padding: 2rem;
+        margin-left: 0;
+    }
+
+    .checked {
+        text-align: center;
+    }
+}
