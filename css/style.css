@@ -135,12 +135,6 @@ img {
 
 @media (max-width: 375px) {
 
-    * {
-        border: 1px solid red;
-        margin: 0px;
-        padding: 0px;
-    }
-
     body {
         width: 375px;
         
