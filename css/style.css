@@ -3,18 +3,20 @@
 * {
     box-sizing: border-box;
 }
+
 body {
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
-    width: 1340px;
-    font-size: 15px;
+    width: 1240px;
+    font-size: 13px;
 }
 
-.ads-ratings {
+.container {
+    width: 1040px;
+    padding: 3rem;
     display: flex;
-    margin: 2rem 8rem;
-    justify-content: space-around;
+    flex-direction: column;
 }
 
 .ads > h2 {
@@ -32,6 +34,12 @@ body {
     color: hsl(303, 10%, 53%);
 }
 
+.ads-ratings {
+    width: 1240px;
+    display: flex;
+    justify-content: space-around;
+}
+
 .ratings {
     font-weight: bold;
     justify-content: center;
@@ -39,7 +47,7 @@ body {
 }
 
 .rating-1 {
-    width: 450px;
+    width: 400px;
     background: #eedbee;
     color: hsl(300, 43%, 22%);
     border-radius: 4px;
@@ -48,7 +56,7 @@ body {
 }
 
 .rating-2 {
-    width: 450px;
+    width: 400px;
     background: #eedbee;
     color: hsl(300, 43%, 22%);
     border-radius: 4px;
@@ -57,7 +65,7 @@ body {
 }
 
 .rating-3 {
-    width: 450px;
+    width: 400px;
     background: #eedbee;
     color: hsl(300, 43%, 22%);
     border-radius: 4px;
@@ -70,12 +78,10 @@ body {
 }
 
 .review-cards {
-    margin: 2rem 8rem;
-    gap: 20px;
-
-    display: grid;
-    grid-template-areas: 
-        "colton irene anne";      
+    width: 1240px;
+    display: flex;
+    gap: 35px;
+    padding: 1rem 5rem;
 }
 
 .card {
@@ -111,36 +117,33 @@ img {
     margin-top: 0;
 }
 
-.review-cards:nth-child(1) {
-    grid-area: colton;
-}
-
-.review-cards:nth-child(2) {
-    grid-area: irene;
-}
-
-.review-cards:nth-child(3) {
-    grid-area: anne;
-}
-
 .colton {
-    height: 215px;
+    height: 200px;
 }
 
 .irene {
-    height: 215px;
+    height: 200px;
     margin-top: 20px;
 }
 
 .anne {
-    height: 215px;
+    height: 200px;
     margin-top: 40px;
 }
 
-@media (max-width: 875px) {
+
+
+@media (max-width: 375px) {
+
+    * {
+        border: 1px solid red;
+        margin: 0px;
+        padding: 0px;
+    }
 
     body {
         width: 375px;
+        
     }
 
     .ads-ratings {
@@ -148,6 +151,7 @@ img {
         width: 100%;
         justify-content: center;
         align-items: center;
+        border: 1px solid red;
     }
 
     .ads > h2 {
@@ -174,24 +178,25 @@ img {
     }
 
     .review-cards {
-        grid-template-areas: 
-        "colton"
-        "irene"
-        "anne";
+        display: flex;
+        flex-direction: column;
         width: 100%;
         border: 1px solid red;
+        gap: 20px;
     }
 
     .colton {
-        width: 450px;
-        margin-right: 50px
+        width: 350px;
+        margin-top: 20px;
+
     }
 
     .irene {
-        width: 450px;
+        width: 350px;
     }
 
     .anne {
-        width: 450px;
+        width: 350px;
+        margin: 20px 0px;
     }
 }
