@@ -133,7 +133,7 @@ img {
 
 
 
-@media (max-width: 375px) {
+@media (max-width: 875px) {
 
     * {
         border: 1px solid red;
@@ -183,12 +183,12 @@ img {
         width: 100%;
         border: 1px solid red;
         gap: 20px;
+        align-items: center;
     }
 
     .colton {
         width: 350px;
         margin-top: 20px;
-
     }
 
     .irene {
