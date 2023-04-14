@@ -137,7 +137,7 @@ img {
 
     .ads-ratings {
         flex-direction: column;
-        width: 100%;
+        width: 375px;
         justify-content: center;
         align-items: center;
     }
@@ -168,7 +168,7 @@ img {
     .review-cards {
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 375px;
         gap: 20px;
         align-items: center;
     }
