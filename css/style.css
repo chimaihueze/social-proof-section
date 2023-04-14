@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-    width: 1040px;
+    max-width: 1240px;
     padding: 3rem;
     display: flex;
     flex-direction: column;
@@ -135,11 +135,18 @@ img {
 
 @media (max-width: 375px) {
 
+    .container {
+        border: 1px solid blue;
+        width: 375px;
+    }
+
     .ads-ratings {
         flex-direction: column;
-        width: 375px;
+        width: 100%;
         justify-content: center;
         align-items: center;
+        padding: 0px;
+        border: 1px solid blue;
     }
 
     .ads > h2 {
@@ -168,22 +175,22 @@ img {
     .review-cards {
         display: flex;
         flex-direction: column;
-        width: 375px;
+        width: 100%;
         gap: 20px;
         align-items: center;
     }
 
     .colton {
-        width: 350px;
         margin-top: 20px;
+        max-width: 400px;
     }
 
     .irene {
-        width: 350px;
+        max-width: 400px;
     }
 
     .anne {
-        width: 350px;
         margin: 20px 0px;
+        max-width: 400px;
     }
 }
