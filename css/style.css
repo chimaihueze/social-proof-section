@@ -135,15 +135,16 @@ img {
     margin-top: 40px;
 }
 
-@media screen and (max-width: 475px) {
+@media screen and (max-width: 791px) {
     
     body {
-        width: 500px;
+        font-size: 10px;
+        width: 20rem;
         border: 1px solid red;
     }
 
     .ads-ratings {
-        width: 500px;
+        width: 20rem;
         border: 1px solid red;
         
         display: flex;
@@ -151,65 +152,62 @@ img {
     }
 
     .ads {
-        width: 400px;
+        width: 18rem;
         text-align: center;
-        border: 1px solid yellow;
     }
 
     .ads > h2 {
-        font-size: 2.5rem;
-        color: hsl(300, 43%, 22%);
-        width: 300px;
-        font-weight: bold;
-        line-height: 2.5rem;
-        border: 1px solid blue;
-        margin: 0 3rem;
+        width: 18rem;
+        margin: 1rem;
     }
     
     .ads > p {
-        font-size: 0.8rem;
-        padding: 1rem 0;
-        width: 400px;
-        line-height: 1.5rem;
-        font-size: medium;
-        color: hsl(303, 10%, 53%);
+        width: 20rem;
     }
 
     .rating-1 {
         padding: 2rem;
+        width: 18rem;
     }
     
     .rating-2 {
+        width: 18rem;
         margin-left: 0px;
         padding: 2rem;
     }
     
     .rating-3 {
+        width: 18rem;
         padding: 2rem;
         margin-left: 0px;
-        margin-bottom: 1.5rem;
+        margin-bottom: 1rem;
     }
 
     .review-cards {
-        width: 500px;
+        width: 20rem;
         padding: 0;
-        border: 1px solid red;
+        border: 1px solid blue;
         flex-direction: column;
     }
 
     .colton {
-        width: 400px;
-        margin-top: 2rem;
+        width: 18rem;
+        height: 10rem;
+        margin-top: 1rem;
     }
     
     .irene {
-        width: 400px;
-        margin-top: 2rem;
+        width: 18rem;
+        height: 10rem;
+        margin-top: 1rem;
     }
     
     .anne {
-        margin-top: 2rem;
-        width: 400px;
+        margin-top: 1rem;
+        width: 18rem;
+        height: 10rem;
+        justify-content: center;
+        align-items: center;
     }
 
 }
