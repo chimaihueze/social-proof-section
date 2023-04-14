@@ -133,7 +133,7 @@ img {
 
 
 
-@media (max-width: 875px) {
+@media (max-width: 375px) {
 
     * {
         border: 1px solid red;
