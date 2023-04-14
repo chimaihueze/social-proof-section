@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    padding: 0;
     font-family: 'Open Sans', sans-serif;
     width: 1240px;
     font-size: 13px;
@@ -29,7 +29,9 @@ body {
 
 .ads > p {
     font-size: 0.8rem;
+    padding: 1rem 0;
     width: 400px;
+    line-height: 1.5rem;
     font-size: medium;
     color: hsl(303, 10%, 53%);
 }
@@ -42,35 +44,35 @@ body {
 
 .ratings {
     font-weight: bold;
-    justify-content: center;
-    align-items: center;
+    color: hsl(300, 43%, 22%);
 }
 
 .rating-1 {
     width: 400px;
     background: #eedbee;
-    color: hsl(300, 43%, 22%);
+   
     border-radius: 4px;
-    margin-top: 3rem;
+    margin-top: 1.5rem;
     padding: 0.8rem;
 }
 
 .rating-2 {
     width: 400px;
     background: #eedbee;
-    color: hsl(300, 43%, 22%);
+    
     border-radius: 4px;
     padding: 0.8rem;
+    margin-top: 1.5rem;
     margin-left: 35px;
 }
 
 .rating-3 {
     width: 400px;
     background: #eedbee;
-    color: hsl(300, 43%, 22%);
     border-radius: 4px;
     padding: 0.8rem;
     margin-left: 70px;
+    margin-top: 1.5rem;
 }
 
 .checked {
@@ -85,10 +87,12 @@ body {
 }
 
 .card {
+    
     background: hsl(300, 43%, 22%);
     color: hsl(300, 24%, 96%);
     border-radius: 10px;
     padding: 1.5rem;
+
 }
 
 .card-header {
@@ -131,66 +135,81 @@ img {
     margin-top: 40px;
 }
 
-
-
-@media (max-width: 375px) {
-
-    .container {
-        border: 1px solid blue;
-        width: 375px;
+@media screen and (max-width: 475px) {
+    
+    body {
+        width: 500px;
+        border: 1px solid red;
     }
 
     .ads-ratings {
+        width: 500px;
+        border: 1px solid red;
+        
+        display: flex;
         flex-direction: column;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-        padding: 0px;
-        border: 1px solid blue;
+    }
+
+    .ads {
+        width: 400px;
+        text-align: center;
+        border: 1px solid yellow;
     }
 
     .ads > h2 {
-        text-align: center;
-        margin-left: 3rem;
+        font-size: 2.5rem;
+        color: hsl(300, 43%, 22%);
+        width: 300px;
+        font-weight: bold;
+        line-height: 2.5rem;
+        border: 1px solid blue;
+        margin: 0 3rem;
     }
-
+    
     .ads > p {
-        text-align: center;
+        font-size: 0.8rem;
+        padding: 1rem 0;
+        width: 400px;
+        line-height: 1.5rem;
+        font-size: medium;
+        color: hsl(303, 10%, 53%);
     }
 
     .rating-1 {
-        padding: 0.8rem;
+        padding: 2rem;
     }
     
     .rating-2 {
-        padding: 0.8rem;
-        margin-left: 0;
+        margin-left: 0px;
+        padding: 2rem;
     }
     
     .rating-3 {
-        padding: 0.8rem;
-        margin-left: 0;
+        padding: 2rem;
+        margin-left: 0px;
+        margin-bottom: 1.5rem;
     }
 
     .review-cards {
-        display: flex;
+        width: 500px;
+        padding: 0;
+        border: 1px solid red;
         flex-direction: column;
-        width: 100%;
-        gap: 20px;
-        align-items: center;
     }
 
     .colton {
-        margin-top: 20px;
-        max-width: 400px;
+        width: 400px;
+        margin-top: 2rem;
     }
-
+    
     .irene {
-        max-width: 400px;
+        width: 400px;
+        margin-top: 2rem;
+    }
+    
+    .anne {
+        margin-top: 2rem;
+        width: 400px;
     }
 
-    .anne {
-        margin: 20px 0px;
-        max-width: 400px;
-    }
 }
