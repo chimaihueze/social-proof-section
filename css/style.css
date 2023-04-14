@@ -135,17 +135,11 @@ img {
 
 @media (max-width: 375px) {
 
-    body {
-        width: 375px;
-        
-    }
-
     .ads-ratings {
         flex-direction: column;
         width: 100%;
         justify-content: center;
         align-items: center;
-        border: 1px solid red;
     }
 
     .ads > h2 {
@@ -175,7 +169,6 @@ img {
         display: flex;
         flex-direction: column;
         width: 100%;
-        border: 1px solid red;
         gap: 20px;
         align-items: center;
     }
