@@ -157,32 +157,46 @@ img {
     .ads > h2 {
         width: 100%;
         margin: 1rem;
+        font-weight: 900;
     }
     
     .ads > p {
         width: 100%;
     }
 
+    .checked {
+        width: 5%;
+    }
+
     .ratings {
         width: 100%;
+        line-height: 1.5rem;
+    }
+
+    .rating-msg::before {
+        content: '\a';
+        white-space: pre;
     }
 
     .rating-1 {
         width: 100%;
-        padding: 2rem;
+        padding: 1rem;
         margin: 2rem 0;
+        text-align: center;
     }
     
     .rating-2 {
         width: 100%;
         margin: 2rem 0;
-        padding: 2rem;
+        padding: 1rem;
+        text-align: center;
     }
     
     .rating-3 {
         width: 100%;
-        padding: 2rem;
+        padding: 1rem;
         margin: 2rem 0;
+        text-align: center;
     }
 
     .review-cards {
